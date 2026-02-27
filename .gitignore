@@ -1,0 +1,18 @@
+# Godot 4+
+.godot/
+.import/
+.export/
+.export_presets.cfg
+
+# Imports automáticos
+*.import
+
+# Builds
+*.exe
+*.apk
+*.pck
+*.zip
+
+# Sistema
+.DS_Store
+Thumbs.db

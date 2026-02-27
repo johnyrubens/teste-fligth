@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://m8mqicq5fkc0"]
+
+[ext_resource type="Script" uid="uid://tlgf3afj2s38" path="res://scripts/ship/player_ship.gd" id="1_qpcdc"]
+[ext_resource type="Texture2D" uid="uid://cb3gqvkvgoki" path="res://sprites/ship/Sprite-0003.png" id="2_3mqpg"]
+[ext_resource type="Texture2D" uid="uid://cbqnyqgtx4m2l" path="res://sprites/ship/ship_v1.png" id="2_exd2h"]
+[ext_resource type="AudioStream" uid="uid://dy7tth7q5ke57" path="res://sounds/freesound_community-spaceship-ambient-27988.mp3" id="6_oowox"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_f7rs8"]
+size = Vector2(123.910126, 52.08058)
+
+[node name="TestFlight" type="Node2D" unique_id=966068453]
+
+[node name="PlayerShip" type="CharacterBody2D" parent="." unique_id=1949343419]
+z_index = 1
+position = Vector2(98, 143.00002)
+scale = Vector2(0.8473827, 0.88245445)
+script = ExtResource("1_qpcdc")
+max_speed = 200.0
+tex_side = ExtResource("2_exd2h")
+tex_front = ExtResource("2_3mqpg")
+
+[node name="Ship" type="Sprite2D" parent="PlayerShip" unique_id=249414906]
+position = Vector2(-2.2888184e-05, -2.26642)
+scale = Vector2(1.0197034, 0.84248453)
+texture = ExtResource("2_exd2h")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerShip" unique_id=409802220]
+position = Vector2(-1.180109, 4.532791)
+rotation = 0.01212676
+scale = Vector2(0.9999994, 0.99999934)
+shape = SubResource("RectangleShape2D_f7rs8")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1185444271]
+stream = ExtResource("6_oowox")
+pitch_scale = 0.55
+autoplay = true
+
+[node name="cavernaTest" type="Node2D" parent="." unique_id=1632863395]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="cavernaTest" unique_id=1221930327]

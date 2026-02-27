@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://m8mqicq5fkc0"]
+
+[ext_resource type="Texture2D" uid="uid://ndvsicapemy4" path="res://sprites/ship/ship_0.png" id="1_butx8"]
+[ext_resource type="Script" uid="uid://tlgf3afj2s38" path="res://scripts/ship/player_ship.gd" id="1_qpcdc"]
+
+[node name="TestFlight" type="Node2D" unique_id=966068453]
+
+[node name="PlayerShip" type="CharacterBody2D" parent="." unique_id=1949343419]
+script = ExtResource("1_qpcdc")
+
+[node name="Sprite2D" type="Sprite2D" parent="PlayerShip" unique_id=249414906]
+position = Vector2(32, 32)
+texture = ExtResource("1_butx8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerShip" unique_id=160675698]
