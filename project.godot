@@ -15,6 +15,10 @@ run/main_scene="uid://m8mqicq5fkc0"
 config/features=PackedStringArray("4.6", "Mobile")
 config/icon="res://icon.svg"
 
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/GitGodot/plugin.cfg")
+
 [input]
 
 up={

@@ -3,6 +3,7 @@
 .godot/
 .import/
 .export/
+addons/
 .export_presets.cfg
 
 # Imports automáticos
